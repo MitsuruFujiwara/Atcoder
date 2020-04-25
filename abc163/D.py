@@ -1,13 +1,9 @@
 N, K = map(int, input().split())
 
-from itertools import combinations
-numbers=[]
+mod = 10**9+7
+ans = 0
+for i in range(K,N+2):
+    ans += (N-i+1)*i+1
+    ans %= mod
 
-for n in range(N+1):
-    numbers.append(10**100+n)
-
-sums = []
-for c in combinations(numbers,K):
-    sums.append(c[0]+c[1])
-
-print(len(set(sums)))
+print(ans)
