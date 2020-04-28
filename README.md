@@ -1,2 +1,2 @@
 # atcoder
-atcoderのメモ用
+atcoderで解いた問題のメモ
